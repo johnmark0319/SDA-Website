@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sto. Domingo Associates Agency</title>
+  <link rel="icon" href="images\SDALOGO.png" type="image/png" />
+  <link rel="stylesheet" href="join.css">
+  <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
+
+</head>
+
+<body>
+
+
+  <main class="main">
+
+    <section class="section1">
+
+      <div class="container1">
+
+        <div class="part1">
+          <h1>
+            Contact Us
+          </h1>
+          <p>
+            Fill up the form below to send us a message.
+          </p>
+          <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+
+            <input type="hidden" name="access_key" value="b0539e9d-c6b1-4cf8-846b-2636724345ed" />
+            <input type="hidden" name="subject" value="New Submission from SDA Website" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+            <div class="c1">
+
+              <div class="c1-p1">
+
+                <label for="inquiry">Type of Inquiry</label>
+
+                <select name="Inquiry Type: " class="inquiry" id="inquiry" required>
+                  <option value="">Please Select</option>
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Product Inquiry">Product Inquiry</option>
+                  <option value="Claim Inquiry">Claim Inquiry</option>
+                  <option value="Customer Feedback">Customer Feedback</option>
+                  <option value="Career">Career</option>
+                </select>
+
+                <div class="empty-feedback invalid-feedback" id="error">
+                  Please Choose the Type of Inquiry
+                </div>
+
+              </div>
+
+              <div class="c1-p1">
+
+                <label for="job">Type of Job</label>
+
+                <select name="Job Type: " class="job" id="job" disabled>
+                  <option value="">Please Select</option>
+                  <option value="Financial Advisor">Financial Advisor</option>
+                  <option value="Customer service">Customer service</option>
+                  <option value="Risk managers">Risk managers</option>
+                  <option value="Marketing specialists">Marketing specialists</option>
+                  <option value="Loss control specialists">Loss control specialists</option>
+                  <option value="Technical support">Technical support</option>
+                </select>
+
+                <div class="empty-feedback invalid-feedback" id="error">
+                  Please Choose the Type of Job
+                </div>
+
+
+              </div>
+
+            </div>
+
+            <div class="c1">
+
+              <div class="c1-p1">
+
+                <label for="hear">Where did you Hear from Us?</label>
+
+                <select name="Hear From Us: " class="hear" required>
+                  <option value="">Please Select</option>
+                  <option value="Search Engine">Search Engine</option>
+                  <option value="Google Ads">Google Ads</option>
+                  <option value="Facebook Ads">Facebook Ads</option>
+                  <option value="Youtube Ads">Youtube Ads</option>
+                  <option value="TV">TV</option>
+                  <option value="Word of Mouth">Word of Mouth</option>
+                </select>
+
+                <div class="empty-feedback invalid-feedback" id="error">
+                  Please Choose an Option
+                </div>
+
+              </div>
+
+              <div class="c1-p1">
+
+                <label for="name">Name</label>
+
+                <input type="text" name="Name: " class="name" placeholder="Ex. Juan Dela Cruz" required>
+
+                <div class="empty-feedback invalid-feedback" id="error">
+                  Please Provide Your Full Name.
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="c1">
+
+              <div class="c1-p1">
+
+                <label for="email">Email Address</label>
+
+                <input type="email" name="Email: " class="email" placeholder="your@email.com" required />
+                <div class="empty-feedback" id="error">
+                  Please provide your email address.
+                </div>
+                <div class="invalid-feedback" id="error">
+                  Please provide a valid email address.
+                </div>
+              </div>
+
+              <div class="c1-p1">
+                <label for="phone">Phone Number</label>
+
+
+
+                <input type="number" name="Phone Number: " class="phone" placeholder="01234567890" min="1"
+                  max="99999999999" oninput="this.value = this.value.slice(0, 11)" required />
+
+                <div class="empty-feedback invalid-feedback" id="error">
+                  Please provide your phone number.
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="c1">
+
+              <div class="c1-p2">
+
+                <label for="message">Your Message</label>
+
+                <textarea rows="5" name="message" class="message" placeholder="Please Leave us a Message"
+                  required></textarea>
+
+                <div class="empty-feedback invalid-feedback" id="error">
+                  Please enter your message.
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="c1">
+
+              <div class="c1-p3">
+
+                <label class="container"> I’ve read, understood, and consented to SDA collecting, using, and disclosing
+                  my personal data as outlined in the Privacy Declaration.
+                  <input type="checkbox" name="consent" required>
+                  <span class="checkmark"></span>
+                  <div class="empty-feedback invalid-feedback" id="error1">
+                    Please Check the Checkbox.
+                  </div>
+                </label>
+
+
+
+              </div>
+
+            </div>
+
+            <div class="mb-6">
+              <button type="submit" class="submit-button">
+                Send
+              </button>
+            </div>
+
+            <p class="notif" id="result"></p>
+          </form>
+        </div>
+
+
+
+
+      </div>
+
+      <div class="container2">
+
+        <section class="container2-section1">
+
+          <h1>SDA Branch Locations</h1>
+
+          <select id="locate">
+            <option value="">Branch</option>
+            <option value="Cebu">Cebu</option>
+            <option value="Makati">Makati</option>
+            <option value="Bohol">Bohol</option>
+            <option value="Negros Oriental">Negros Oriental</option>
+            <option value="Pampanga">Pampanga</option>
+          </select>
+
+          <p>Please Choose a Branch you want to Locate</p>
+
+        </section>
+
+        <section class="container2-section2">
+
+          <div class="map">
+
+            <div id="map-text">Branch Images</div>
+
+            <div id="cebu">
+              <div>Cardinal Rosales Ave, Cebu City, 6000 Cebu</div>
+            </div>
+
+            <div id="makati">
+              <div>Philam Salcedo Bldg, Leviste Street, 1227 Metro Manila</div>
+            </div>
+
+            <div id="bohol">
+              <div>North Road, Tagbilaran City, Bohol</div>
+            </div>
+
+            <div id="negros">
+              <div>Silliman Ave, Dumaguete, Negros Oriental</div>
+            </div>
+
+            <div id="pampanga">
+              <div>Jose Abad Santos Ave, San Fernando, 2000 Pampanga</div>
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+  <header class="header">
+
+    <div id="header-content">
+
+      <div class="logo">
+
+        <a href="index.html">
+          <div id="logo-img" style="  background-image: url(images/SDALOGO.png);
+          background-size: contain;
+          background-repeat: no-repeat;"></div>
+        </a>
+
+        <div class="company-name">Sto Domingo Associates</div>
+
+      </div>
+
+
+
+      <div class="navigation">
+
+        <nav class="nav">
+          <ul class="nav_list">
+
+
+            <li class="nav_item">
+              <a href="index.html" class="nav_link_home">Home</a>
+            </li>
+
+            <li class="nav_item">
+              <a href="news.php" class="nav_link_news">News & Media</a>
+            </li>
+
+            <li class="nav_item">
+              <a href="org.php" class="nav_link_org">Organization</a>
+            </li>
+
+            <li class="nav_item">
+              <a href="about.html" class="nav_link_about">About</a>
+            </li>
+
+            <li class="nav_item">
+              <a href="join.html" class="nav_link_join">Join Now</a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <footer class="footer">
+
+    <div class="footer-content">
+
+      <div class="upper-part">
+
+        <div class="footer-logo" style="  background-image: url(images/SDALOGO.png);
+  background-size: cover;"></div>
+
+        <div class="footer-address">
+
+          <h1>Location</h1> <br>
+
+          <a href="https://maps.app.goo.gl/fPQdGm9nRuXq1Y1B9" class="address" target="_blank">
+            <p>GF, Philam Salcedo Bldg, 126 L.P. Leviste Street, Salcedo Village, Makati, 1227 Metro Manila</p>
+          </a> <br>
+
+          <a href="https://maps.app.goo.gl/u1LUdvj3ff1S2mTx8" class="address" target="_blank">
+            <p>MV34+25H, North Road, Tagbilaran City, Bohol</p>
+          </a> <br>
+
+          <a href="https://maps.app.goo.gl/1nj4YVSikmqrpH6z5" class="address" target="_blank">
+            <p>8W84+JFQ, Cardinal Rosales Ave, Cebu City, 6000 Cebu</p>
+          </a><br>
+
+          <a href="https://maps.app.goo.gl/PMezx8YhhEfXuAoB7" class="address" target="_blank">
+            <p>8854+X43, Silliman Ave, Dumaguete, Negros Oriental</p>
+          </a><br>
+
+          <a href="https://maps.app.goo.gl/BeXzPfQPxBtoxket9" class="address" target="_blank">
+            <p>2/F Kingsborough Building, Jose Abad Santos Ave, San Fernando, 2000 Pampanga</p>
+          </a>
+
+        </div>
+
+        <div class="footer-contact">
+          <h1>Contact Information</h1>
+          <p class="contact">Email: stodomingoassociates@gmail.com <br>
+
+            Landline: (+63) 17 800 9303 <br>
+
+            Smart: (+63) 17 800 9303 <br>
+
+            Globe: (+63) 17 800 9303</p>
+        </div>
+
+      </div>
+
+      <div class="lower-part">
+
+        <div class="footer-terms">
+
+          <a href="terms.html" class="terms">Terms and Conditions</a>
+          <span class="copyrights">Copyright © 2023, This Website is made by John Mark Umpad</span>>
+
+        </div>
+
+        <div class="footer-logo-link">
+
+
+          <a href="https://www.facebook.com/SDAFinancialAdvisors" target="_blank"><img src="images/fb.png"
+              class="fb-logo"></a>
+          <a href="https://www.linkedin.com/company/stodomingoassociates/about/?fbclid=IwAR0_03-7ES3Ls_e30WHtbHiF0WxDl6OZiF2ccjDp8aGviNTh3jNPxkgIxCY"
+            target="_blank"><img src="images/linked.png" class="linked-logo"></a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="header-awareness.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="join.js"></script>
+
+</body>
+
+</html>
